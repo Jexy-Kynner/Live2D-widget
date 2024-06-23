@@ -23,7 +23,16 @@ function loadExternalResource(url, type) {
 		}
 	});
 }
-
+#waifu {
+    bottom: -1000px;
+    right: 50px;
+    line-height: 0;
+    margin-bottom: -10px;
+    position: fixed;
+    transform: translateY(3px);
+    transition: transform .3s ease-in-out, bottom 3s ease-in-out;
+    z-index: 1;
+}
 // 加载 waifu.css live2d.min.js waifu-tips.js
 if (screen.width >= 768) {
 	Promise.all([
